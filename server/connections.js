@@ -1,13 +1,5 @@
 'use strict';
 
-/**
- * This file handles all connections to the private api
- * Since its just 3 connections, a file is more then enough
- * But if more connections start to be created, or more complex api are used,
- * there will be a need to break each connection down into micro services
- * This helps with debugging and code error
- */
-
 import https from 'https';
 
 /**
@@ -33,25 +25,6 @@ const addCampOptions = {
     'X-API-Key': 'BxVwmtoGEj8cXYSOTOZKTKZc8yFTJIB4zbCz366b'
   }
 };
-
-/**
- * Post example
- */
-// let postRequest = https.post( options, ( resp ) => {
-
-//   let data = '';
-
-//   resp.on( 'data', ( chunk ) => {
-//     data += chunk;
-//   });
-
-//   resp.on( 'end', () => {
-//     console.log( JSON.parse( data ));
-//   });
-
-// }).on( 'error', ( err ) => {
-//   console.log( 'Error: ' + err.message );
-// });
 
 /**
  * GET All Campaigns Options
