@@ -1,0 +1,30 @@
+.dashboardContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboardLink {
+  margin: 10px;
+}
+
+.dashboardItem {
+  display: flex;
+  flex-wrap: wrap;
+
+  text-align: center;
+
+  border: 2px solid red;
+  border-radius: 15px;
+
+  margin-bottom: 10px;
+}
+
+.dashboardBlock {
+  flex: 1 0 50%;
+  justify-content: center;
+}
+
+.dashboardFullBlock {
+  flex: 1 0 100%;
+}
+
